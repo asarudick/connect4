@@ -8,9 +8,11 @@ export interface DropCoinAction {
   };
 }
 
+export const DropCoinActionType = "DROP_COIN";
+
 export function dropCoin(column: number, color: Color): DropCoinAction {
   return {
-    type: "DROP_COIN",
+    type: DropCoinActionType,
     payload: { column, color }
   };
 }

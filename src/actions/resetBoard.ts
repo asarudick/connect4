@@ -3,9 +3,11 @@ export interface ResetBoardAction {
   payload: {};
 }
 
+export const ResetBoardActionType = "RESET_BOARD";
+
 export function resetBoard(): ResetBoardAction {
   return {
-    type: "RESET_BOARD",
+    type: ResetBoardActionType,
     payload: {},
   };
 }
