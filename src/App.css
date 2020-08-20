@@ -9,6 +9,14 @@
   color: white;
 }
 
+.App .replay-button.win {
+  background-color: green;
+}
+
+.App .replay-button.no-win {
+  background-color: red;
+}
+
 .Game {
   display: flex;
   justify-content: center;
