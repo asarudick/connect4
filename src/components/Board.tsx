@@ -61,7 +61,7 @@ export class BoardComponent extends React.Component<Props> {
 const mapState = (state: RootState) => ({
   board: getBoard(state),
   color: getCurrentPlayer(state),
-  winner: getWinner(state)
+  winner: getWinner(state),
 });
 
 export const Board = connect(mapState, { dropCoin })(BoardComponent);
